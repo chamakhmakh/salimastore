@@ -27,7 +27,9 @@
                     <li><a href="">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px">
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px">
+            </a>
             <img src="images/menu-regular.png" class="menu-icon" onclick="menutuggle()">
         </div>
     </div>
@@ -139,6 +141,7 @@
                 </div>
                 <p>49,90 TND</p>
             </div>
+        </div>
     </div>
     <!----- footer ------>
 
@@ -182,40 +185,6 @@
         </div>
     </div>
 
-    <!------- js for menu ----------->
-
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutuggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            } else {
-                MenuItems.style.maxHeight = "0px"
-            }
-        }
-    </script>
-
-    <!-------- js for product gallery -------->
-
-    <script>
-        var ProductImg = document.getElementById("ProductImg");
-        var SmallImg = document.getElementsByClassName("small-img");
-
-        SmallImg[0].onclick = () => {
-            ProductImg.src = SmallImg[0].src;
-        }
-        SmallImg[1].onclick = () => {
-            ProductImg.src = SmallImg[1].src;
-        }
-        SmallImg[2].onclick = () => {
-            ProductImg.src = SmallImg[2].src;
-        }
-        SmallImg[3].onclick = () => {
-            ProductImg.src = SmallImg[3].src;
-        }
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
