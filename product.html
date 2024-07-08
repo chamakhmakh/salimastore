@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products Salima Store | Ecommerce Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;500;600;700&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu-regular.png" class="menu-icon" onclick="menutuggle()">
+            </div>
+        </div>
+    
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by raiting</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/pontalon.jpg">
+                <h4>PANTALON LARGE COLLECTION ZW</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>159,00 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/robe.jpg">
+                <h4>ROBE EN POPELINE AVEC BRODERIES EFFET GOMME</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>159,00 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/chapeau.jpg">
+                <h4>CHAPEAU BOB TRESSÉ EN CONTRASTE</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>109,00 TND</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html">
+                    <img src="images/T-SHIRT2.jpg">
+                </a>
+                <h4>T-SHIRT COURT EN COTON ET EN MODAL</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>29,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/body.jpg">
+                <h4>BODY EN POLYAMIDE AVEC DÉCOLLETÉ CARRÉ</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>69,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/top.jpg">
+                <h4>HAUT STYLE GILET SANS MANCHES EN MAILLE À BOUTONS DORÉS</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>139,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/short.jpg">
+                <h4>SHORT TAILLE HAUTE EN TISSU DOUBLE</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>129,00 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/pull.jpg">
+                <h4>PULL EN MAILLE FINE UNIE</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>89,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/jean.jpg">
+                <h4>JEAN Z1975 DROIT À TAILLE HAUTE</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>139,00 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/T-SHIRT3.jpg">
+                <h4>T-SHIRT EN MAILLE SURJET À MANCHES COURTES</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>69,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/top2.jpg">
+                <h4>HAUT COURT EN MAILLE UNIE</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>99,90 TND</p>
+            </div>
+            <div class="col-4">
+                <img src="images/short2.jpg">
+                <h4>SHORT EN JEAN TRF ARQUÉ À TAILLE HAUTE AVEC DÉCHIRURES</h4>
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star' ></i>
+                </div>
+                <p>129,00 TND</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!----- footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img class="play-store" src="images/playstore.png">
+                        <img class="app-store" src="images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo white.png">
+                    <p>Our purpose Is To Sustainbly Make The Pleasure and
+                        Benifits of Outfits Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebok</li>
+                        <li>Instagram</li>
+                        <li>TikoTok</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2024</p>
+        </div>
+    </div>
+
+    <!------- js for menu ----------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutuggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>
