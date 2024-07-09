@@ -254,15 +254,17 @@ ul {
 
 /*-----media query for menu-----*/
 
+
 @media only screen and (max-width: 800px) {
     nav ul {
         position: absolute;
         top: 70px;
-        left: 0;
+        right: 0;
         background: #333;
-        width: 100%;
+        width: 90px;
         overflow: hidden;
         transition: max-height 0.5s;
+        padding-left: 10px;
     }
 
     nav ul li {
