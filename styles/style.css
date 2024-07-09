@@ -266,6 +266,7 @@ ul {
         transition: max-height 0.5s;
         padding-left: 50px;
         width: 50%;
+        border-radius: 15%;
     }
 
     nav ul li {
