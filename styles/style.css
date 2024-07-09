@@ -264,14 +264,16 @@ ul {
         width: 90px;
         overflow: hidden;
         transition: max-height 0.5s;
-        padding-left: 10px;
+        padding-left: 50px;
+        width: 50%;
     }
 
     nav ul li {
         display: block;
+        text-align: center;
         margin-right: 50px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     nav ul li a {
