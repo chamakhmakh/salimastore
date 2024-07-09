@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Salima Store | Ecommerce Website</title>
+    <title>Contact Us | Salima Store | Ecommerce Website</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,47 +32,55 @@
         </div>
     </div>
 
-    <!----- cart items details ------->
+    <!---------- Contact page ---------->
 
-    <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/details product/T-SHIRT26.jpg">
-                        <div>
-                            <p>T-SHIRT COURT EN COTON ET EN MODAL</p>
-                            <small>Price: 29,90 TND</small>
-                            <br>
-                            <a href="">Remove</a>
+    <div class="contact-page">
+        <h2>Contact Us</h2>
+        <p>Thank you for visiting Salima Store! We're here to help with any questions or concerns you may have. Whether you need assistance with a product, 
+            have a question about your order, or just want to provide feedback, we would love to hear from you. Please don't hesitate to reach out to us by 
+            filling out the contact form below. Our customer service team is dedicated to providing you with the best possible experience and will respond 
+            to your inquiries as quickly as possible. We look forward to connecting with you!</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="box">
+                        <div class="icon"><i class='bx bxs-map'></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>28 Rue Hammouda maali le Kram</p>
                         </div>
                     </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>150,00 TND</td>
-            </tr>
-        </table>
 
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Total</td>
-                    <td>20,90 TND</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>20,90 TND</td>
-                </tr>
-                <tr>
-                    <td>Total Price</td>
-                    <td>20,90 TND</td>
-                </tr>
-            </table>
+                    <div class="box">
+                        <div class="icon"><i class='bx bxs-phone' ></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+216 51 706 261</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class='bx bxs-envelope' ></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>bensaidf232@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <h2>Send Message</h2>
+
+                        <form>
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email">
+                            <textarea placeholder="Type Your Message"></textarea>
+                            <button type="submit" class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -119,5 +127,24 @@
     </div>
 
     <script src="scripts/main.js"></script>
+    <script>
+        /*---------- js for toggle form-----------*/
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register () {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login () {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
 </body>
 </html>
